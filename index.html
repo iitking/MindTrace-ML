@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindTrace - Mental Health Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧠 MindTrace</h1>
+            <p>Predict your mental health score based on your lifestyle habits</p>
+        </div>
+
+        <form id="predictForm" class="form-card">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" min="10" max="100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" placeholder="e.g. India" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="academicLevel">Academic Level</label>
+                    <select id="academicLevel" required>
+                        <option value="High School">High School</option>
+                        <option value="Undergraduate">Undergraduate</option>
+                        <option value="Graduate">Graduate</option>
+                        <option value="Postgraduate">Postgraduate</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="platform">Most Used Platform</label>
+                    <select id="platform" required>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Twitter">Twitter</option>
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="YouTube">YouTube</option>
+                        <option value="TikTok">TikTok</option>
+                        <option value="Snapchat">Snapchat</option>
+                        <option value="KakaoTlak">KakaoTalk</option>
+                        <option value="LINE">LINE</option>
+                        <option value="VKontakte">VKontakte</option>
+                        <option value="WhatsApp">WhatsApp</option>
+                        <option value="WeChat">WeChat</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="purpose">Purpose of Use</label>
+                    <select id="purpose" required>
+                        <option value="Networking">Networking</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Education">Education</option>
+                        <option value="News">News</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="avgUsage">Avg Daily Usage (hours)</label>
+                    <input type="number" id="avgUsage" min="0" max="24" step="0.1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dailyUnlocks">Daily Unlocks</label>
+                    <input type="number" id="dailyUnlocks" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studyHours">Study Hours</label>
+                    <input type="number" id="studyHours" min="0" max="24" step="0.1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="physicalActivity">Physical Activity (hours)</label>
+                    <input type="number" id="physicalActivity" min="0" max="24" step="0.1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="sleepHours">Sleep Hours Per Night</label>
+                    <input type="number" id="sleepHours" min="0" max="24" step="0.1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="stressLevel">Stress Level</label>
+                    <select id="stressLevel" required>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                        <option value="Very High">Very High</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Predict Score</button>
+        </form>
+
+        <div id="result" class="result-card hidden">
+            <p class="result-label">Predicted Mental Health Score</p>
+            <p id="scoreValue" class="score-value">--</p>
+        </div>
+
+        <div id="errorBox" class="error-box hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
