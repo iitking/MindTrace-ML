@@ -108,6 +108,30 @@ Predicts a mental health score based on student lifestyle data.
 
 ---
 
+## 📈 Model Performance
+
+Three models were trained and compared before finalizing the best one:
+
+| Model                     | R² (Test) | R² (Train) | MAE    | RMSE   |
+|---------------------------|-----------|------------|--------|--------|
+| Linear Regression         | 0.7398    | 0.7237     | 0.5362 | 0.6760 |
+| Random Forest (default)   | **0.8776**| 0.9808     | **0.3472** | **0.4637** |
+| Random Forest (tuned)     | 0.8650    | 0.9547     | 0.3689 | 0.4869 |
+
+**Best hyperparameters found via `RandomizedSearchCV`:**
+```python
+{
+  'random_forest__n_estimators': 200,
+  'random_forest__min_samples_split': 5,
+  'random_forest__min_samples_leaf': 2,
+  'random_forest__max_depth': 15
+}
+```
+
+The **Random Forest Regressor** was selected as the final model, achieving an **R² score of ~0.88** on the test set — meaning it explains about 88% of the variance in students' mental health scores.
+
+---
+
 ## 📊 Model
 
 The model is a scikit-learn `Pipeline` combining:
