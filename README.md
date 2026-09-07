@@ -158,7 +158,7 @@ IIT Roorkee
 
 ### Connect with me
 
-- GitHub: [iitking](https://github.com/iitking)
+- GitHub: [Nivesh Kumar Meena](https://github.com/iitking)
 - LinkedIn: [Nivesh Kumar Meena](https://www.linkedin.com/in/nivesh-kumar-meena-a31465221/)
 
 ---
