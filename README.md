@@ -2,7 +2,7 @@
 
 MindTrace is a machine learning powered API that predicts a student's **mental health score** based on their lifestyle habits — social media usage, sleep, study hours, physical activity, and stress level.
 
-🔗 **Live Demo:** [https://mindtrace-ml-1.onrender.com](https://mindtrace-ml-1.onrender.com)
+🔗 **Live Demo:** [Mindtrace](https://mindtrace-ml-1.onrender.com)
 
 ---
 
@@ -127,4 +127,14 @@ This project is open source and available for educational purposes.
 
 ## 🙋‍♂️ Author
 
-Built by **Nivesh Kumar**
+Built by **Nivesh Kumar Meena**
+
+B.Tech Electrical Engineering  
+IIT Roorkee
+
+### Connect with me
+
+- GitHub: [iitking](https://github.com/iitking)
+- LinkedIn: [Nivesh Kumar Meena](https://www.linkedin.com/in/nivesh-kumar-meena-a31465221/)
+
+---
